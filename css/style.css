@@ -190,3 +190,22 @@ font-family: 'Great Vibes', cursive;
   width: 325px;
   border-radius: 10px;
 }
+
+#copyrights {
+  font-size: 18px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.footername {
+  padding-bottom: 1%;
+}
+
+.footername:hover {
+  color: #881C2B;
+}
+
+.thyline {
+  border-bottom: solid 3px #881C2B;
+  margin-bottom: 1%;
+}
