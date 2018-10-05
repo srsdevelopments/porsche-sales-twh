@@ -1,0 +1,192 @@
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #881C2B;
+}
+
+nav {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  background: #000000;
+}
+
+#masterhead {
+  text-align: center;
+    color: #ffffff;
+    background: #000000;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    animation: slideInDown 1.5s linear;
+    position: fixed;
+    z-index: 1;
+    border-bottom: solid 3px #881C2B;
+}
+
+#menu1 {
+  font-size: 58px;
+  margin-left: 3%;
+  margin-top: 2%;
+  float: left;
+}
+
+.secttitle {
+  font-size: 58px;
+  border-top: solid 3px #881C2B;
+  border-bottom: solid 3px #881C2B;
+  margin-bottom: 20%;
+  text-align: center;
+}
+
+#menu2 {
+  font-size: 34px;
+  margin-right: 3%;
+  margin-top: 4.2%;
+  float: right;
+}
+
+.menuitem {
+  margin-right: 20px;
+}
+
+#porlogo {
+  margin-right: 10px;
+  height: 75px;
+  width: 55px;
+}
+
+#homecont {
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+}
+
+.carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.slideimg {
+  height: 1000px;
+}
+
+.slidetext {
+  font-size: 120px;
+  padding-bottom: 50%;
+  font-weight: bold;
+}
+
+#viewcont {
+  border-top: solid 3px #881C2B;
+  background: #000000;
+  color: #ffffff;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#viewtopline {
+  border-top: solid 3px #881C2B;
+}
+
+#viewinventorybtn {
+  color: #ffffff;
+  border: solid #ffffff 3px;
+  padding: 30px;
+  font-size: 90px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.parkfont {
+font-family: 'Great Vibes', cursive;
+}
+
+#viewinventorybtn:hover {
+  color: #881C2B;
+  background: #ffffff;
+}
+
+#mainfoot {
+  padding-top: 5%;
+  padding-bottom: 1%;
+  text-align: center;
+    background: #000000;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    border-top: solid #881C2B 3px;
+}
+
+#footerwrap {
+  padding-top: 1.5%;
+  padding-bottom: 0%;
+}
+
+.socialimg {
+  height: 80px;
+  width: 80px;
+}
+
+.social {
+  margin-bottom: 20%;
+}
+
+.social:hover {
+  color: #881C2B;
+}
+
+#socialwrap {
+
+}
+
+
+#specimg {
+  height: 55px;
+  width: 55px;
+  padding-right: 5px;
+}
+
+#footerpara {
+  text-align: left;
+  font-size: 52px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#footertext {
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+#picnphone {
+  margin-top: 8%;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 52px;
+}
+
+#littletanner {
+  margin-top: 5%;
+  height: 400px;
+  width: 325px;
+  border-radius: 10px;
+}
