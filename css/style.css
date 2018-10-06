@@ -38,6 +38,7 @@ body {
   margin-left: 3%;
   margin-top: 2%;
   float: left;
+  font-family: 'Great Vibes', cursive;
 }
 
 .secttitle {
@@ -115,13 +116,13 @@ body {
   text-align: center;
 }
 
-.parkfont {
-font-family: 'Great Vibes', cursive;
-}
-
 #viewinventorybtn:hover {
   color: #881C2B;
   background: #ffffff;
+}
+
+.parkfont {
+font-family: 'Great Vibes', cursive;
 }
 
 #mainfoot {
@@ -198,7 +199,8 @@ font-family: 'Great Vibes', cursive;
 }
 
 .footername {
-  padding-bottom: 1%;
+  padding-bottom: .5%;
+  border-bottom: solid 3px #881C2B
 }
 
 .footername:hover {
@@ -260,4 +262,157 @@ font-family: 'Great Vibes', cursive;
   /* background-color: #2098D1; */
   /* background-color: #2098d1; */
   /* color: white; */
+}
+
+@media only screen and (min-width: 992px){
+
+.socialimg {
+  height: 50px;
+  width: 50px;
+}
+
+#specimg {
+  height: 35px;
+  width: 35px;
+}
+
+  #masterhead {
+      height: 85px;
+      width: 100%;
+      z-index: 1;
+      font-size: 28px;
+  }
+
+  #menu1 {
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 0%;
+  }
+
+  #menu2 {
+    font-size: 30px;
+    margin-right: 3%;
+    margin-top: 1.1%;
+  }
+
+  .secttitle {
+    font-size: 30px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+
+  .menuitem {
+    margin-right: 20px;
+  }
+
+  #porlogo {
+    margin-right: 10px;
+    height: 75px;
+    width: 55px;
+  }
+
+  #homecont {
+    background: #000000;
+      height: 100%;
+  }
+
+  .slideimg {
+    height: 725px;
+  }
+
+  .slidetext {
+    font-size: 100px;
+    padding-bottom: 22.5%;
+  }
+
+  .carousel-control-prev-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  #viewcont {
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  #viewinventorybtn {
+    background: #000000;
+      color: #ffffff;
+      border: solid #ffffff 3px;
+    padding: 25px;
+    font-size: 54px;
+  }
+
+  #viewinventorybtn:hover {
+    color: #881C2B;
+    background: #ffffff;
+  }
+
+  #mainfoot {
+    padding-top: 2.5%;
+    padding-bottom: 1%;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      font-size: 24px;
+  }
+
+  #footerwrap {
+    padding-top: .3%;
+    padding-bottom: .3%;
+  }
+
+  #socialwrap {
+    margin-top: 0%;
+  }
+
+  .social {
+    margin-bottom: 2.5%;
+  }
+
+  #footerpara {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 0%;
+    margin-bottom: 2.5%;
+    margin-left: 0%;
+  }
+
+  #footertext {
+    margin-left: 0%;
+  }
+
+  #picnphone {
+    margin-top: 0%;
+    text-align: right;
+    margin-bottom: 2.5%;
+    font-size: 26px;
+  }
+
+  #littletanner {
+    height: 275px;
+    width: 225px;
+  }
+
+  .footername {
+    padding-bottom: 0%;
+  }
+
+  .thyline {
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+  }
+
+  #copyrights {
+    font-size: 12px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
 }
