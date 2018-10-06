@@ -24,7 +24,7 @@ body {
   text-align: center;
     color: #ffffff;
     background: #000000;
-    height: 150px;
+    height: 175px;
     width: 100%;
     position: absolute;
     animation: slideInDown 1.5s linear;
@@ -34,15 +34,15 @@ body {
 }
 
 #menu1 {
-  font-size: 58px;
+  font-size: 70px;
   margin-left: 3%;
-  margin-top: 2%;
-  float: left;
+  margin-top: 0%;
+  /* float: left; */
   font-family: 'Great Vibes', cursive;
 }
 
 .secttitle {
-  font-size: 58px;
+  font-size: 68px;
   border-top: solid 3px #881C2B;
   border-bottom: solid 3px #881C2B;
   margin-bottom: 20%;
@@ -50,20 +50,19 @@ body {
 }
 
 #menu2 {
-  font-size: 34px;
-  margin-right: 3%;
-  margin-top: 4.2%;
-  float: right;
+  font-size: 38px;
+  margin-top: 0%;
+  /* float: right; */
 }
 
 .menuitem {
-  margin-right: 20px;
+  margin-right: 20%;
 }
 
 #porlogo {
-  margin-right: 10px;
-  height: 75px;
-  width: 55px;
+  margin-right: 5px;
+  height: 100px;
+  width: 80px;
 }
 
 #homecont {
@@ -287,16 +286,18 @@ font-family: 'Great Vibes', cursive;
     font-size: 50px;
     margin-left: 3%;
     margin-top: 0%;
+    float: left;
   }
 
   #menu2 {
+    float: right;
     font-size: 30px;
     margin-right: 3%;
     margin-top: 1.1%;
   }
 
   .secttitle {
-    font-size: 30px;
+    font-size: 42px;
     margin-bottom: 10%;
     margin-top: 5%;
   }
