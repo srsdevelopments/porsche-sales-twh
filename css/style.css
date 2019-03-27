@@ -146,6 +146,11 @@ text-align: center;
   padding-bottom: 10%;
 }
 
+#viewconttext {
+  font-size: 52px;
+  margin-bottom: 10%;
+}
+
 #viewtopline {
   border-top: solid 3px #881C2B;
 }
@@ -154,7 +159,7 @@ text-align: center;
   color: #ffffff;
   border: solid #ffffff 3px;
   padding: 30px;
-  font-size: 90px;
+  font-size: 68px;
   border-radius: 10px;
   text-align: center;
 }
@@ -391,12 +396,20 @@ font-family: 'Great Vibes', cursive;
     padding-bottom: 3%;
   }
 
+  #viewconttext {
+    text-align: left;
+    font-size: 26px;
+    margin-bottom: 0%;
+    margin-top: 1%;
+  }
+
   #viewinventorybtn {
     background: #000000;
       color: #ffffff;
       border: solid #ffffff 3px;
     padding: 25px;
-    font-size: 54px;
+    font-size: 38px;
+    width: 80%;
   }
 
   #viewinventorybtn:hover {
