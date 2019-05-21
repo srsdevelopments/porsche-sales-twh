@@ -1,3 +1,21 @@
+/* include border and padding size inside html element's dimensions */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* allow app to span full page dimensions */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;
+}
+
 a:visited, a:link, a:active
 {
     text-decoration: none;
@@ -20,83 +38,33 @@ body {
   background: #881C2B;
 }
 
-.arrow,
-.arrow:before {
-  position: absolute;
-  left: 50%;
-}
-
-.arrow {
-  width: 40px;
-  height: 40px;
-  top: 50%;
-   margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-text-align: center;
-}
-
-.arrow:before {
-  content: '';
-  width: 20px;
-  height: 20px;
-   top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-10px, -10px);
-  }
-  }
-
 #masterhead {
   text-align: center;
     color: #ffffff;
     background: #000000;
-    height: 185px;
+    height: 120px;
     width: 100%;
     position: absolute;
     animation: slideInDown 1.5s linear;
     position: fixed;
     z-index: 1;
     border-bottom: solid 3px #881C2B;
+    display: grid;
 }
 
 #menu1 {
-  font-size: 72px;
-  margin-left: 3%;
-  margin-top: 0%;
-  /* float: left; */
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 40px;
+  margin-top: 1%;
   font-family: 'Great Vibes', cursive;
 }
 
-.secttitle {
-  font-size: 68px;
-  border-top: solid 3px #881C2B;
-  border-bottom: solid 3px #881C2B;
-  margin-bottom: 20%;
-  text-align: center;
-}
-
 #menu2 {
-  font-size: 42px;
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 20px;
   margin-top: 1%;
-  /* float: right; */
 }
 
 .menuitem {
@@ -105,15 +73,18 @@ text-align: center;
 
 #porlogo {
   margin-right: 5px;
-  height: 75px;
-  width: 55px;
+  height: 55px;
+  width: 40px;
 }
 
 #homecont {
-    height: 100%;
     text-align: center;
     color: #ffffff;
     background: #000000;
+}
+
+.slideimg {
+  height: 100%;
 }
 
 .carousel-control-prev-icon {
@@ -126,13 +97,8 @@ text-align: center;
   width: 100px;
 }
 
-.slideimg {
-  height: 1000px;
-}
-
 .slidetext {
-  font-size: 140px;
-  padding-bottom: 48%;
+  font-size: 30px;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -140,28 +106,27 @@ text-align: center;
   border-top: solid 3px #881C2B;
   background: #000000;
   color: #ffffff;
-  height: 100%;
+  width: 100%;
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #viewconttext {
-  font-size: 52px;
+  font-size: 26px;
   margin-bottom: 10%;
-}
-
-#viewtopline {
-  border-top: solid 3px #881C2B;
 }
 
 #viewinventorybtn {
   color: #ffffff;
   border: solid #ffffff 3px;
-  padding: 30px;
-  font-size: 68px;
-  border-radius: 10px;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 5px;
   text-align: center;
+  width: 100%;
 }
 
 #viewinventorybtn:hover {
@@ -174,20 +139,28 @@ font-family: 'Great Vibes', cursive;
 }
 
 #mainfoot {
-  padding-top: 5%;
-  padding-bottom: 1%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center;
     background: #000000;
     color: #ffffff;
-    height: 100%;
     width: 100%;
-    bottom: 0;
     border-top: solid #881C2B 3px;
 }
 
-#footerwrap {
-  padding-top: 1.5%;
-  padding-bottom: 0%;
+.texthead {
+  border-top: solid #881C2B 3px;
+  border-bottom: solid #881C2B 3px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+}
+
+.textpara {
+  padding-top: 20%;
+  font-size: 26px;
+  padding-bottom: 20%;
 }
 
 .socialimg {
@@ -203,10 +176,6 @@ font-family: 'Great Vibes', cursive;
   color: #881C2B;
 }
 
-#socialwrap {
-
-}
-
 
 #specimg {
   height: 55px;
@@ -214,44 +183,17 @@ font-family: 'Great Vibes', cursive;
   padding-right: 5px;
 }
 
-#spectitle {
-  margin-bottom: 30%;
-}
-
-#footerpara {
-  text-align: left;
-  font-size: 52px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-#footertext {
-  margin-left: 5%;
-  margin-bottom: 10%;
-}
-
-#picnphone {
-  margin-top: 8%;
-  text-align: center;
-  margin-bottom: 2%;
-  font-size: 52px;
-}
-
-#littletanner {
-  margin-top: 5%;
-  height: 400px;
-  width: 325px;
-  border-radius: 10px;
-}
-
 #copyrights {
-  font-size: 18px;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  font-size: 14px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #000000;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
 }
 
 .footername {
-  padding-bottom: .5%;
   border-bottom: solid 3px #881C2B
 }
 
@@ -261,8 +203,6 @@ font-family: 'Great Vibes', cursive;
 
 .thyline {
   border-bottom: solid 3px #881C2B;
-  margin-bottom: 1%;
-  margin-top: 5%;
 }
 
 @keyframes slideInDown {
@@ -317,99 +257,95 @@ font-family: 'Great Vibes', cursive;
   /* color: white; */
 }
 
-@media only screen and (min-width: 992px){
-
-.socialimg {
-  height: 50px;
-  width: 50px;
-}
-
-#specimg {
-  height: 35px;
-  width: 35px;
-}
-
+@media (min-width: 600px) {
   #masterhead {
-      height: 85px;
+    text-align: center;
+      color: #ffffff;
+      background: #000000;
+      height: 120px;
       width: 100%;
+      position: absolute;
+      animation: slideInDown 1.5s linear;
+      position: fixed;
       z-index: 1;
-      font-size: 28px;
+      border-bottom: solid 3px #881C2B;
+      display: grid;
   }
 
   #menu1 {
-    font-size: 50px;
-    margin-left: 3%;
-    margin-top: 0%;
-    float: left;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 40px;
+    margin-top: 1%;
+    font-family: 'Great Vibes', cursive;
   }
 
   #menu2 {
-    float: right;
-    font-size: 30px;
-    margin-right: 3%;
-    margin-top: 1.1%;
-  }
-
-  .secttitle {
-    font-size: 42px;
-    margin-bottom: 10%;
-    margin-top: 5%;
-  }
-
-  .menuitem {
-    margin-right: 20px;
-  }
-
-  #porlogo {
-    margin-right: 10px;
-    height: 75px;
-    width: 55px;
-  }
-
-  #homecont {
-    background: #000000;
-      height: 100%;
-  }
-
-  .slideimg {
-    height: 700px;
-  }
-
-  .slidetext {
-    font-size: 120px;
-    padding-bottom: 21%;
-  }
-
-  .carousel-control-prev-icon {
-    height: 50px;
-    width: 50px;
-  }
-
-  .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
-  }
-
-  #viewcont {
-    height: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-
-  #viewconttext {
-    text-align: left;
-    font-size: 26px;
-    margin-bottom: 0%;
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 20px;
     margin-top: 1%;
   }
 
-  #viewinventorybtn {
-    background: #000000;
+  .menuitem {
+    margin-right: 20%;
+  }
+
+  #porlogo {
+    margin-right: 5px;
+    height: 55px;
+    width: 40px;
+  }
+
+  #homecont {
+      text-align: center;
       color: #ffffff;
-      border: solid #ffffff 3px;
-    padding: 25px;
-    font-size: 38px;
-    width: 80%;
+      background: #000000;
+  }
+
+  .slideimg {
+    height: 100%;
+  }
+
+  .carousel-control-prev-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .slidetext {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  #viewcont {
+    border-top: solid 3px #881C2B;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #viewconttext {
+    font-size: 26px;
+    margin-bottom: 5%;
+  }
+
+  #viewinventorybtn {
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 5px;
+    text-align: center;
   }
 
   #viewinventorybtn:hover {
@@ -417,69 +353,265 @@ font-family: 'Great Vibes', cursive;
     background: #ffffff;
   }
 
+  .parkfont {
+  font-family: 'Great Vibes', cursive;
+  }
+
   #mainfoot {
-    padding-top: 2.5%;
-    padding-bottom: 1%;
-      height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+      background: #000000;
+      color: #ffffff;
       width: 100%;
       bottom: 0;
-      font-size: 24px;
+      border-top: solid #881C2B 3px;
   }
 
-  #footerwrap {
-    padding-top: .3%;
-    padding-bottom: .3%;
+  .texthead {
+    border-top: solid #881C2B 3px;
+    border-bottom: solid #881C2B 3px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
   }
 
-  #spectitle {
-    margin-bottom: 10%;
+  .textpara {
+    padding-top: 10%;
+    font-size: 26px;
+    padding-bottom: 10%;
   }
 
-  #socialwrap {
-    margin-top: 0%;
+  .socialimg {
+    height: 80px;
+    width: 80px;
   }
 
   .social {
-    margin-bottom: 2.5%;
+    margin-bottom: 10%;
   }
 
-  #footerpara {
-    text-align: left;
-    font-size: 26px;
-    margin-top: 0%;
-    margin-bottom: 2.5%;
-    margin-left: 0%;
+  .social:hover {
+    color: #881C2B;
   }
 
-  #footertext {
-    margin-left: 0%;
-  }
 
-  #picnphone {
-    margin-top: 0%;
-    text-align: right;
-    margin-bottom: 2.5%;
-    font-size: 26px;
-  }
-
-  #littletanner {
-    height: 275px;
-    width: 225px;
-  }
-
-  .footername {
-    padding-bottom: 0%;
-  }
-
-  .thyline {
-    margin-top: 2.5%;
-    margin-bottom: 1%;
+  #specimg {
+    height: 55px;
+    width: 55px;
+    padding-right: 5px;
   }
 
   #copyrights {
-    font-size: 12px;
-    padding-top: 0%;
+    font-size: 14px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  .footername {
+    border-bottom: solid 3px #881C2B
+  }
+
+  .footername:hover {
+    color: #881C2B;
+  }
+
+  .thyline {
+    border-bottom: solid 3px #881C2B;
+  }
+}
+
+@media (min-width: 900px) {
+  #masterhead {
+    text-align: center;
+      color: #ffffff;
+      background: #000000;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      animation: slideInDown 1.5s linear;
+      position: fixed;
+      z-index: 1;
+      border-bottom: solid 3px #881C2B;
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+
+  #menu1 {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 40px;
+    margin-top: 1%;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  #menu2 {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 20px;
+    margin-top: 5%;
+  }
+
+  .menuitem {
+    margin-right: 10%;
+  }
+
+  #porlogo {
+    margin-right: 0px;
+    height: 55px;
+    width: 40px;
+  }
+
+  #homecont {
+      text-align: center;
+      color: #ffffff;
+      background: #000000;
+  }
+
+  .slideimg {
+    height: 100%;
+  }
+
+  .carousel-control-prev-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .slidetext {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  #viewcont {
+    border-top: solid 3px #881C2B;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+  }
+
+  #viewconttext {
+    text-align: left;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 26px;
+    margin-bottom: 0%;
+  }
+
+  #viewinventorybtn {
+    grid-row: 1;
+    grid-column: 2;
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #viewinventorybtn:hover {
+    color: #881C2B;
+    background: #ffffff;
+  }
+
+  .parkfont {
+  font-family: 'Great Vibes', cursive;
+  }
+
+  #mainfoot {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+      background: #000000;
+      color: #ffffff;
+      width: 100%;
+      bottom: 0;
+      border-top: solid #881C2B 3px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+
+  #abouttanner {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #contacttanner {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .texthead {
+    border-top: solid #881C2B 3px;
+    border-bottom: solid #881C2B 3px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+  }
+
+  .textpara {
+    padding-top: 5%;
+    font-size: 26px;
     padding-bottom: 0%;
   }
 
+  #tannertext {
+    text-align: left;
+  }
+
+  #tannericon {
+    text-align: right;
+  }
+
+  .socialimg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .social {
+    margin-bottom: 5%;
+  }
+
+  .social:hover {
+    color: #881C2B;
+  }
+
+
+  #specimg {
+    height: 55px;
+    width: 55px;
+    padding-right: 5px;
+  }
+
+  #copyrights {
+    font-size: 14px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  .footername {
+    border-bottom: solid 3px #881C2B
+  }
+
+  .footername:hover {
+    color: #881C2B;
+  }
+
+  .thyline {
+    border-bottom: solid 3px #881C2B;
+    margin-bottom: 1%;
+    margin-top: 5%;
+  }
 }
