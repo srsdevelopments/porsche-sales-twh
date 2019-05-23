@@ -84,17 +84,17 @@ body {
 }
 
 .slideimg {
-  height: 100%;
+  height: 650px;
 }
 
 .carousel-control-prev-icon {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .slidetext {
@@ -140,7 +140,7 @@ font-family: 'Great Vibes', cursive;
 
 #mainfoot {
   padding-top: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 0%;
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
@@ -178,9 +178,9 @@ font-family: 'Great Vibes', cursive;
 
 
 #specimg {
-  height: 55px;
-  width: 55px;
-  padding-right: 5px;
+  height: 50px;
+  width: 50px;
+  margin: 15px 0px;
 }
 
 #copyrights {
@@ -359,7 +359,7 @@ font-family: 'Great Vibes', cursive;
 
   #mainfoot {
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 0%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -531,7 +531,7 @@ font-family: 'Great Vibes', cursive;
 
   #mainfoot {
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
