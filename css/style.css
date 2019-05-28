@@ -13,7 +13,6 @@ html, body {
     padding: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background: #000000;
 }
 
 /* link styles */
@@ -77,7 +76,13 @@ body {
         grid-row: 1;
         grid-column: 2;
         font-size: 20px;
-        margin-top: 5%;
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #menu2 {
+        margin-top: 3%;
     }
 }
 
@@ -168,14 +173,23 @@ body {
     font-size: 60px;
     font-family: 'Great Vibes', cursive;
 }
+.carousel-caption {
+    bottom: 100px;
+}
 @media (min-width: 600px) {
     .slidetext {
         font-size: 75px;
+    }
+    .carousel-caption {
+        bottom: 135px;
     }
 }
 @media (min-width: 900px) {
     .slidetext {
         font-size: 90px;
+    }
+    .carousel-caption {
+        bottom: 190px;
     }
 }
 
@@ -254,6 +268,7 @@ body {
     color: #ffffff;
     width: 100%;
     border-top: solid #881C2B 3px;
+    border-bottom: solid #881C2B 3px;
 }
 
 .texthead {
@@ -279,6 +294,10 @@ body {
 }
 
 .social:hover {
+  color: #881C2B;
+}
+
+.linkicon:hover {
   color: #881C2B;
 }
 
@@ -440,7 +459,7 @@ body {
 
   #mainfoot {
     padding-top: 5%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -492,7 +511,13 @@ body {
   }
 
   .social {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+  }
+
+  @media (min-width: 1200px) {
+    .social {
+      margin-bottom: 0%;
+    }
   }
 
   .social:hover {
@@ -508,8 +533,8 @@ body {
 
   #copyrights {
     font-size: 14px;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
   }
 
   .footername {
@@ -518,11 +543,5 @@ body {
 
   .footername:hover {
     color: #881C2B;
-  }
-
-  .thyline {
-    border-bottom: solid 3px #881C2B;
-    margin-bottom: 1%;
-    margin-top: 5%;
   }
 }
