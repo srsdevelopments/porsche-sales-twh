@@ -145,24 +145,16 @@ body {
 }
 @media (min-width: 600px) {
     .carousel-control-prev-icon {
-        height: 75px;
-        width: 75px;
     }
     .carousel-control-next-icon {
-        height: 75px;
-        width: 75px;
     }
 }
 @media (min-width: 900px) {
     .carousel-control-prev-icon {
-        height: 100px;
-        width: 100px;
 
         margin-top: 40px;
     }
     .carousel-control-next-icon {
-        height: 100px;
-        width: 100px;
 
         margin-top: 40px;
     }
